@@ -1,0 +1,209 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+body  {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#000000 url(images/background.jpg) no-repeat center top;
+	color: #ffffff;
+}
+/* a {
+	color:#ff9c00;
+	text-decoration:underline;
+}
+a:hover {
+	color:#ff9c00;
+	text-decoration:none;
+}
+#container { 
+	width: 100%; 
+} 
+#header {
+	width:100%; 
+}
+.logo {
+	color:#ff9c00;
+	font-size:60px;
+	padding:10px 0 0 30px;
+}
+.author {
+	padding:0 0 10px 30px;
+	color:#707070;
+}
+.author a {
+	color:#707070;
+} */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 10 px 10px;
+    background: #111111;
+    font-family: 'ubuntu',sans-serif;
+}
+.max_width{
+    max-width: 1300PX;
+    padding: 0 100px;
+    margin: auto;
+}
+.navbar .max_width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: -100px;
+}
+.navbar .logo a span{
+    color: rgb(17, 139, 187);
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    color: #ffffff;
+}
+.navbar .max_width .menu{
+    margin-right: -120px;
+}
+.navbar .menu li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.2s;
+}
+ .menu li:hover{
+    color:rgb(17, 139, 187);
+    border-bottom: 2px double rgb(17, 139, 187);
+   border: width 50%;
+}
+.menu #active a {
+	color:rgb(17, 139, 187);
+	font-size:24px;
+	text-decoration:none;
+}
+section{
+	padding: 50px 0;
+}
+.home{
+	background:#000000 url(images/background.jpg) no-repeat center top;
+	background-size: cover;
+}
+.home{
+	background: url(images/background.jpg) no-repeat center ;
+	background-size: cover;
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    color:black;
+    min-height: 500px;
+    font-family: sans-serif;
+}
+.home.max_width{
+    margin: auto 0 auto 40px;
+}
+.home-content{
+    margin-left: 540px;
+    margin-top: 520px;
+}
+.home .home-content .text-1{
+    font-size: 37px;
+}
+.home .home-content .text-2{
+    font-size: 55px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+}
+.title-1{
+    font-family: 'ubuntu',sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 4PX solid #ffffff;
+    border-radius: 15px;
+    width: 100%;
+    border-width: 4px;
+}
+.line_n{
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    color: crimson;
+    margin-top: -30px;
+    background-color:#000000;
+    width: 12%;
+    margin-left: 670px;
+}
+.leftContent{
+    margin-left: 10px;
+}
+.rightContent{
+    align-items: center;
+    margin-left: 766px;
+    margin-top: -400px;
+}
+.rightContent1{
+    margin-top: 10px;
+}
+.inputBox input [type="Enter"]{
+    width: 100px;
+    background:rgb(17, 139, 187);
+}
+.reg{
+	font-size: 20px;
+	background: rgb(17, 139, 187);
+	border-style: 2px outset;
+	padding: 4px 4px;
+	box-shadow: 2px 2px 4px 4px white;
+}
+/* .allContent {
+	width:800px;
+	margin:0 auto;
+	padding:130px 0 0 0;
+}
+.leftContent p, .rightContent p {
+	padding:40px;
+}
+.leftContent {
+	float:left;
+	width:400px;
+	background:url(images/leftContent.png) repeat-y left top;
+}
+.rightContent {
+	margin-left:436px;
+	width:364px;
+	background:url(images/rightContent.png) repeat-y left top;
+} 
+.rightContent ul {
+	margin:0;
+	padding:0 40px;
+}
+.rightContent li {
+	list-style:none;
+	padding:0 0 20px 0;
+}
+#footer {
+	text-align:center;
+	color:#707070;
+	padding:30px 0;
+} 
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+} */

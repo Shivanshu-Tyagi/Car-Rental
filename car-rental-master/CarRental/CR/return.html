@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Return cars and generate bill
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+        <link href="pstyles.css" rel="stylesheet" type="text/css" />
+     
+    </head>
+    <body>
+        <marquee><h3>This Christmas 25% OFF on SUVs.  Free Rides on first booking. Hurry Now</h3></marquee>
+		
+  <nav class="navbar">
+	<div class="max_width">
+	<div class="logo">
+	  <a href="#">RETURN-<span>Rentel bill</span></a></div>
+  <div class="menu">
+	  <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="customer.html">Customers</a></li>
+		<li><a href="chauffeur.html">Chauffeur</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="book.html">Book Car</a></li>
+		<li id="active"><a href="">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+	</ul>
+  </div>
+</div>
+</nav>		
+<div class="leftContent">
+    <b><form action="return.php" method="post">
+        <div class="contactform">
+            <b><form action="regchauffeur.php" method="post">
+        <div class="inputbox">
+            <input type="text" class="i" name="fname">
+            <span>First Name</span>
+        </div><br><br>
+        <div class="inputbox">
+            <input type="text" class="i" name="lname">
+            <span>Last Name</span>
+        </div><br><br>
+        <div class="inputbox">
+        <input type="text" class="i" name="rid"/>
+        <span>Enter Rental ID:</span>
+        </div><br><br><input type="submit" name="enter" value="Enter">
+        
+        
+Enter Rental ID: <input type="text" name="rid"/><br><br>
+<input type="submit" name="enter" value="Enter">
+</form>
+	
+	</body>
+	</html>

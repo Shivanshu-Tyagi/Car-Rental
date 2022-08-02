@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!--
+Database Systems Project - 2 - Car Rental system 
+@author - Rajat Dhanuka
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+     
+    </head>
+    <body>
+        <marquee><h3 class="marquee">This mounth 25% OFF on SUVs.  Free Rides on first booking. Hurry Now</h3></marquee>
+      
+  <nav class="navbar">
+    <div class="max_width">
+    <div class="logo">
+      <a href="#">Car<span>Rentel</span></a></div>
+  <div class="menu">
+  	<ul>
+    	<li id="active"><a href="">Home</a></li>
+        <li><a href="customer.html">Customers</a></li>
+		<li><a href="chauffeur.html">Chauffeur</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="book.html">Book Car</a></li>
+		<li><a href="return.html">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<section  class="home">
+  <div class="home-content">
+    <div class="text-1">Welcome....!!</div>
+    <div class="text-2">To The Car Rental Service </div>
+    <!-- <div class="text-3">And i'm a <span>developer</span></div> -->
+</div>
+</section>
+<section class="booking" id="booking">
+<h2 class="title-1">BOOKINGS<h2>
+  <div class="line_n"> BOOK A CAR </div>
+    <div class="leftContent">
+    <b><form action="available.php" method="post" >
+   <br><br>
+    Enter Customer ID: <input type="text" name="cbid"/><br><br>
+    Enter date yyyy-mm-dd: <input type="text" name="Sdate"/><br><br>
+    Select Car type: <select name = "Ctype">
+    <option>Compact</option>
+    <option>Medium</option>
+    <option>Large</option>
+    <option>SUV</option>
+    <option>Van</option>
+    <option>Truck</option>
+    </select><br><br>
+    Rent type: <select name = "Rtype">
+    <option>Daily</option>
+    <option>Weekly</option>
+    </select><br><br>
+    No of days : <select name = "Days">
+    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
+    </select><br><br>
+    No of weeks : <select name = "Weeks">
+    <option>0</option><option>1</option><option>2</option><option>3</option>
+    </select><br><br>
+    <div class="inputBox"></div>
+    <input type="submit" name="check" class="reg" value="Check Availability"><br><br>
+  </div>
+    Enter Vehicle id: <input type="text" name="Vehicleid"/><br><br>
+    <div class="inputBox"></div>
+    <input type="submit" name="book" class="reg" value="Book"></div>
+    </form></b>	
+    
+    <br>
+    <b><form action="viewrental.php" method="post" >
+    <h2> VIEW ACTIVE & SCHEDULED RENTALS </h2>
+    <div class="inputBox">
+    <input type="submit" name="submit1" class="reg" value="View"></div>
+    </form></b>
+    </div>	
+    
+    
+    <div class="rightContent">
+    <SCRIPT LANGUAGE="JavaScript">
+    
+    var num=1
+    img1 = new Image ()
+    img1.src = "images/1.jpg"
+    img2 = new Image ()
+    img2.src = "images/2.jpg"
+    img3 = new Image ()
+    img3.src = "images/3.jpg"
+    img4 = new Image ()
+    img4.src = "images/4.jpg" 
+    img5 = new Image ()
+    img5.src = "images/5.jpeg" 
+    img6 = new Image ()
+    img6.src = "images/6.jpg" 
+    
+    text1 = "MEDIUM"
+    text2 = "S.U.V"
+    text3 = "COMPACT"
+    text4 = "LARGE"
+    text5 = "TRUCK"
+    text6 = "VAN"
+    
+    function slideshowUp()
+    {
+    num=num+1
+    if (num==7)
+    {num=1}
+    document.mypic.src=eval("img"+num+".src")
+    document.raj.iname.value=eval("text"+num)
+    }
+    
+    function slideshowBack()
+    {
+    num=num-1
+    if (num==0)
+    {num=6}
+    document.mypic.src=eval("img"+num+".src")
+    document.raj.iname.value=eval("text"+num)
+    }
+    
+    </SCRIPT>
+    <!-- The Image and Form Codes are Below --> 
+    <CENTER>
+    <IMG SRC="images/1.jpg" NAME="mypic" BORDER=0 HEIGHT="380" WIDTH="500">
+    <FORM NAME="raj">
+      <div class="inputBox">
+    <INPUT TYPE="text" WIDTH="100" NAME="iname" class="reg" VALUE="Medium"></div>
+    </FORM><A HREF="JavaScript:slideshowBack()"> Back</A>  <A HREF="JavaScript:slideshowUp()"> Next</A> 
+    
+    
+    </div>
+</section>
+<section>
+  <h2 class="title-1">CARS<h2>
+    <div class="line_n"> ADD A CAR </div>
+<div class="leftContent">
+<b><form action="registercar.php" method="post" >
+License No: <input type="text" name="lno"/><br><br>
+Model: <input type="text" name="model"/><br><br>
+Year : <input type="text" name="year"/><br><br>
+Car type: <select name = "Cartype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select><br><br>
+Car Owner: <select name = "Carown">
+<option>Individual</option>
+<option>Bank</option>
+<option>Company</option>
+</select><br><br>
+<h2>Enter Owner Details : </h2><br>
+Unique ID: <input type="text" name="uid"/><br><br>
+Name: <input type="text" name="oname"/><br><br>
+City : <input type="text" name="city"/><br><br>
+<div class="inputBox">
+<input type="submit" name="submit" class="reg" value="Register"></div>
+</form></b>	
+</div>	
+
+
+<div class="rightContent">
+<h1> VIEW CARS & RATES</h1>
+<form action="viewcar.php" method="post">
+Select Car type to view: <select name="Ctype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select>
+<div class="inputBox">
+<input type="submit" name="submit1" class="reg" value="View"></div>
+</form>
+
+<br><br><br><br>
+
+<h1> UPDATE RENTAL RATES </h1>
+<form action="update.php" method="post">
+Select Car type to update: <select name = "Ctype">
+<option>Compact</option>
+<option>Medium</option>
+<option>Large</option>
+<option>SUV</option>
+<option>Van</option>
+<option>Truck</option>
+</select><br><br>
+Daily Rate: <input type="text" name="udrate"/><br><br>
+Weekly Rate: <input type="text" name="uwrate"/><br><br>
+<div class="inputBox">
+<input type="submit" name="submit1" class="reg" value="Update"></div>
+</form>
+</div>
+</section>
+<section>
+    <h2 class="title-1">CHAUFFEUR<h2>
+      <div class="line_n">ADD CHAUFFEUR </div>
+</div>
+<div class="leftContent">
+  <b><form action="regchauffeur.php" method="post">
+First Name: <input type="text" name="fname"/><br><br>
+Last Name: <input type="text" name="lname"/><br><br>
+Age : <input type="text" name="age"/><br><br>
+Mobile: <input type="text" name="mobile"/><br><br>
+Driving License No: <input type="text" name="dlno"/><br><br>
+<div class="inputBox">
+<input type="submit" name="submit" class="reg" value="Register"></div>
+</form></b>	
+  </div>	
+
+  
+<div class="rightContent1">
+<b><form action="viewchauffeur.php" method="post" >
+<h1> VIEW CHAUFFEURS </h1>
+<input type="submit" value="View"/>
+</form></b>	
+</div>
+</section>
+<section>
+  <h2 class="title-1">RETURN<h2>
+    <div class="line_n">RENTEL BILL </div>
+</div>
+<div class="leftContent">
+  <b><form action="return.php" method="post">
+Enter Rental ID: <input type="text" name="rid"/><br><br>
+<div class="inputBox">
+<input type="submit" name="enter" class="reg" value="Enter">
+</div>
+</form>
+</section>	    
+</body>
+</html>
